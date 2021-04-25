@@ -1,7 +1,10 @@
+import dotenv from "dotenv";
 import { Pool } from 'pg';
 
-export default new Pool ({
-    max: 20,
-    connectionString: 'postgres://postgres:asdlkjasdlkj@localhost:5432/zap-api',
-    idleTimeoutMillis: 30000
+dotenv.config();
+
+export default new Pool({
+  max: 20,
+  connectionString: `${process.env.DATABASE_URL}`,
+  idleTimeoutMillis: 30000
 });

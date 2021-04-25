@@ -5,6 +5,7 @@
 Add `.env` file with configuration of 
 
 ```env
-DATABASE_URL=<insert url here>
+PORT=<insert port here>
+DATABASE_URL=<insert db url here>
 ```
 

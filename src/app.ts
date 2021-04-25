@@ -1,5 +1,7 @@
+import dotenv from "dotenv";
 import server from './server';
 
+dotenv.config();
 const port = parseInt(process.env.PORT || '4000');
 
 const starter = new server().start(port)
